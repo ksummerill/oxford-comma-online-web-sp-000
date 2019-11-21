@@ -4,16 +4,22 @@
 # correctly formats arrays of lengths greater than three
 
 def oxford_comma(array)
-    if array.length == 1
-      return array.join
-    elsif array.length == 2
-      return array.join(" and ")
-    else array.length >= 3
-      return array.to_sentence
-    end
+  return nil if array.nil?
+    return array[0] if array.length == 1
+    return array[0..-2].join(', ') + " and " + array[-1] if array.length > 1
 end
 
-# array.split(",")
+# def oxford_comma(array)
+#     if array.length == 1
+#       return array.join
+#     elsif array.length == 2
+#       return array.join(" and ")
+#     else array.length >= 3
+#       return array.to_sentence
+#     end
+# end
+
+
 
 # arrays
 # ["kiwi"]
