@@ -4,13 +4,13 @@
 # correctly formats arrays of lengths greater than three
 
 def oxford_comma(array)
-  array.each do |new_array|
+  # array.each do |new_array|
     if array.length == 1
       return new_array
     elsif array.length == 2
       return [new_array].join(" and ")
     end
-  end
+  # end
 end
 
 # array.split(",")
