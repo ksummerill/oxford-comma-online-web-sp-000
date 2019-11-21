@@ -6,7 +6,7 @@
 def oxford_comma(array)
   return nil if array.nil?
   return array.join if array.length == 1
-  return array[0..-1].join(', ') + " and " + array[-1] if array.length > 1
+  return array[0..-1].join(', ') + " and " + array[-1] if array.length > 2
 end
 
 # def oxford_comma(array)
