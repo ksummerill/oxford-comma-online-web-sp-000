@@ -4,5 +4,18 @@
 # correctly formats arrays of lengths greater than three
 
 def oxford_comma(array)
-
+  array.each |new_array| do
+    if array.length == 1
+      return new_array
+    end  
+  end
 end
+
+
+
+# arrays
+# ["kiwi"]
+# ["kiwi", "durian"]
+# ["kiwi", "durian", "starfruit"]
+# ["kiwi", "durian", "starfruit", "mangos", "dragon fruits"]
+# ["kiwi", "durian", "starfruit", "mangos", "dragon fruits", "lychees", "pomelos"]
