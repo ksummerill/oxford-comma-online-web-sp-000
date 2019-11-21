@@ -4,7 +4,7 @@
 # correctly formats arrays of lengths greater than three
 
 def oxford_comma(array)
-  array.each |new_array| do
+  array.each do |new_array| 
     if array.length == 1
       return new_array
     end
