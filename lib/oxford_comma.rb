@@ -6,7 +6,7 @@
 def oxford_comma(array)
   # array.each do |new_array|
     if array.length == 1
-      return array
+      return array.join
     elsif array.length == 2
       return array.join(" and ")
     end
