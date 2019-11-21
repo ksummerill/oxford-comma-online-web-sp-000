@@ -11,7 +11,7 @@ def oxford_comma(array)
   end
 end
 
-
+# array.split(",")
 
 # arrays
 # ["kiwi"]
